@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+<h1>Haushaltsbuch</h1>
+<form id="entry-form">
+<input type="text" id="desc" placeholder="Beschreibung" required>
+<input type="number" id="amount" placeholder="Betrag (z. B. -12.50 für Ausgabe)" step="0.01" required>
+<select id="category">
+<option value="Alltag">Alltag</option>
+<option value="Freizeit">Freizeit</option>
+<option value="Essen">Essen</option>
+<option value="Transport">Transport</option>
+</select>
+<button type="submit">Hinzufügen</button>
+</form>
+
+
+<section class="summary">
+<div>Kontostand: <strong id="balance">0.00 €</strong></div>
+<div>Ausgaben: <span id="out">0.00 €</span></div>
+<div>Einnahmen: <span id="in">0.00 €</span></div>
+</section>
+
+
+<ul id="list" class="list"></ul>
+
+
+<div class="actions">
+<button id="export">Export CSV</button>
+<button id="clear">Alles löschen</button>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
