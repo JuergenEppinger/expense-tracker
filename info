@@ -1,0 +1,13 @@
+//Expense Tracker
+
+
+Web-App zum Aufzeichnen von Einnahmen und Ausgaben Rechnunge im Zuge eines UNI-Projekts. Speichert Daten lokal im `localStorage`.
+
+
+**Start:** `index.html` im Browser öffnen.
+
+
+**Features:**
+- Einträge hinzufügen / löschen
+- Gesamtsaldo, Einnahmen & Ausgaben anzeigen
+- Export als CSV
